@@ -1,4 +1,5 @@
 import React from 'react'
+import ProductCard from '../components/product/ProductCard';
 
 const Home = () => {
   return (
@@ -133,150 +134,10 @@ const Home = () => {
                   </div>
                   <div className="content">
                       <div className="products-cards-wrapper">
-                          <div className="product-card">
-                              <a href="product" className="product-image">
-                                <img src="media/images/products/5.jpg" alt="Product Image"/>
-                              </a>
-                              <div className="product-info">
-                                <a href="product" class="product-name">XIAOMI Mi 20W Wireless Car Charger</a>
-                                
-                                <div className="product-ratings rating">
-                                  <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                                  <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                                  <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                                  <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                                  <span className="star"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-                                </div>
-                                <div className="product-price">
-                                  <p className="real-price">239.00 Dhs</p>
-                                  <p className="old-price">299.00 Dhs</p>
-                                </div>
-                                <div className="cta">
-                                  <a href="product" className="buy-now-btn">Buy Now</a>
-                                </div>
-                                
-                              </div>
-                          </div>
-                          <div className="product-card">
-                              <a href="product.html" className="product-image">
-                                <img src="media/images/products/10.jpg" alt="Product Image"/>
-                              </a>
-                              <div className="product-info">
-                                <a href="product.html" className="product-name">Masque facial complet, couverture de protection, Masque de sécurité, coupe-vent</a>
-                                
-                                <div class="product-ratings rating">
-                                  <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                                  <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                                  <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                                  <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                                  <span className="star"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-                                </div>
-                                <div className="product-price">
-                                  <p className="real-price">99.00 Dhs</p>
-                                  <p className="old-price">159.00 Dhs</p>
-                                </div>
-                                <div className="cta">
-                                  <a href="product.html" className="buy-now-btn">Buy Now</a>
-                                </div>
-                                
-                              </div>
-                          </div>
-                          {/* <div class="product-card">
-                              <a href="product.html" class="product-image">
-                                <img src="src/media/images/products/7.jpg" alt="Product Image">
-                              </a>
-                              <div class="product-info">
-                                <a href="product.html" class="product-name">Offfre luminaire led murale au design moderne décoration d intérieur</a>
-                                
-                                <div class="product-ratings rating">
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-regular.svg" alt=""></span>
-                                </div>
-                                <div class="product-price">
-                                  <p class="real-price">36.00 Dhs</p>
-                                  <p class="old-price">72.00 Dhs</p>
-                                </div>
-                                <div class="cta">
-                                  <a href="product.html" class="buy-now-btn">Buy Now</a>
-                                </div>
-                                
-                              </div>
-                          </div>
-                          <div class="product-card">
-                              <a href="product.html" class="product-image">
-                                <img src="src/media/images/products/6.jpg" alt="Product Image">
-                              </a>
-                              <div class="product-info">
-                                <a href="product.html" class="product-name">Offfre filet de pêche parapluie pliable automatique cerf volant mobile</a>
-                                
-                                <div class="product-ratings rating">
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-regular.svg" alt=""></span>
-                                </div>
-                                <div class="product-price">
-                                  <p class="real-price">86.00 Dhs</p>
-                                  <p class="old-price">129.00 Dhs</p>
-                                </div>
-                                <div class="cta">
-                                  <a href="product.html" class="buy-now-btn">Buy Now</a>
-                                </div>
-                                
-                              </div>
-                          </div>
-                          <div class="product-card">
-                              <a href="product.html" class="product-image">
-                                <img src="src/media/images/products/8.jpg" alt="Product Image">
-                              </a>
-                              <div class="product-info">
-                                <a href="product.html" class="product-name">Tablette Jouet Enfant Dessin, Tactile Effaçable, Tableau à dessiner écriture</a>
-                                
-                                <div class="product-ratings rating">
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-regular.svg" alt=""></span>
-                                </div>
-                                <div class="product-price">
-                                  <p class="real-price">119.00 Dhs</p>
-                                  <p class="old-price">199.00 Dhs</p>
-                                </div>
-                                <div class="cta">
-                                  <a href="product.html" class="buy-now-btn">Buy Now</a>
-                                </div>
-                                
-                              </div>
-                          </div>
-                          <div class="product-card">
-                              <a href="product.html" class="product-image">
-                                <img src="src/media/images/products/9.jpg" alt="Product Image">
-                              </a>
-                              <div class="product-info">
-                                <a href="product.html" class="product-name">pack 3 ensemble de boîte de rangement pour sous-vêtement multi-grilles pliable</a>
-                                
-                                <div class="product-ratings rating">
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-full.svg" alt=""></span>
-                                  <span class="star"><img src="src/media/images/icons/star-regular.svg" alt=""></span>
-                                </div>
-                                <div class="product-price">
-                                  <p class="real-price">599.00 Dhs</p>
-                                  <p class="old-price">619.00 Dhs</p>
-                                </div>
-                                <div class="cta">
-                                  <a href="product.html" class="buy-now-btn">Buy Now</a>
-                                </div>
-                                
-                              </div>
-                          </div> */}
+                          <ProductCard />
+                          <ProductCard />
+                          <ProductCard />
+                          <ProductCard /> 
                       </div>
                   </div>
               </div>
@@ -286,60 +147,20 @@ const Home = () => {
                   </div>
                   <div className="content">
                     <div className="products-cards-wrapper">
-
-                      <div className="product-card">
-                          <a href="#" className="product-image">
-                            <img src="media/images/products/5.jpg" alt="Product Image"/>
-                          </a>
-                          <div className="product-info">
-                            <a href="#" className="product-name">XIAOMI Mi 20W Wireless Car Charger</a>
-                            
-                            <div class="product-ratings rating">
-                              <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                              <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                              <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                              <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                              <span className="star"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-                            </div>
-                            <div className="product-price">
-                              <p className="real-price">239.00 Dhs</p>
-                              <p className="old-price">299.00 Dhs</p>
-                            </div>
-                            <div className="cta">
-                              <a href="#" className="buy-now-btn">Buy Now</a>
-                            </div>
-                            
-                          </div>
-                      </div>
-                          {/* <a href="#" className="product-image">
-                            <img src="media/images/products/9.jpg" alt="Product Image"/>
-                          </a>
-                          <div className="product-info">
-                            <a href="#" className="product-name">pack 3 ensemble de boîte de rangement pour sous-vêtement multi-grilles pliable</a>
-                            
-                            <div className="product-ratings rating">
-                              <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                              <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                              <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                              <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                              <span className="star"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-                            </div>
-                            <div className="product-price">
-                              <p className="real-price">599.00 Dhs</p>
-                              <p className="old-price">619.00 Dhs</p>
-                            </div>
-                            <div className="cta">
-                              <a href="#" className="buy-now-btn">Buy Now</a>
-                            </div>
-                            
-                          </div> */}
+                      <ProductCard/>
                     </div>
                   </div>
               </div>
           </div>
       </section>
+
+
+      
+      
+      
     </>
   )
 }
 
-export default Home
+
+export default Home;

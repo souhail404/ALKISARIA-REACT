@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className="row-title">
                       <h2>About</h2>
                     </div>
-                    <div class="row-content">
+                    <div className="row-content">
                       <a href="">Services</a>
                       <a href="">Partnerships</a>
                       <a href="">Privacy & policy</a>

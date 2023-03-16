@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ProductImageSlider from '../components/product/ProductImageSlider';
 import ProductInfos from '../components/product/ProductInfos';
 import ProductDescription from '../components/product/ProductDescription';
 import TestimonialsSection from '../components/testimonials/TestimonialsSection';
+import productsData from 'C:/Users/LENOVO/Desktop/AL KISARIA/React-Website-v/alkisaria/src/data/products.json'
 
 const Product = () => {
+
+    
+
 
     return (
     <>
@@ -13,10 +17,10 @@ const Product = () => {
             <div className="container">
                 <div className="content">
                     <div className="row product-media">
-                      <ProductImageSlider/> 
+                      <ProductImageSlider product={productsData[0]}/> 
                     </div>  
                     <div className="row product-infos">
-                        <ProductInfos/>
+                        <ProductInfos product={productsData[0]} />
                         <ProductDescription/>
                     </div>
                 </div>

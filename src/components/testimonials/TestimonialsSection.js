@@ -1,6 +1,6 @@
 import React from 'react'
 import TestimonialCard from './TestimonialCard';
-import testimonilsData from './testimonials.json'
+import testimonilsData from 'C:/Users/LENOVO/Desktop/AL KISARIA/React-Website-v/alkisaria/src/data/testimonials.json'
 
 const TestimonialsSection = () => {
   return (

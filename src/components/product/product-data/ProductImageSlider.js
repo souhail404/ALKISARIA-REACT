@@ -3,7 +3,7 @@ import productsData from 'C:/Users/LENOVO/Desktop/AL KISARIA/React-Website-v/alk
 
 const ProductImageSlider = (props) => {
     //props 
-    const productImages = props.product.images;
+    const productImages = props.images;
 
     //refs 
     const mainImgContainer = useRef()
@@ -110,7 +110,7 @@ const ProductImageSlider = (props) => {
     return (
         <div className="pp--slider-wrapper">
             <div className="main-img" ref={mainImgContainer}>
-                <img className=".m-img" ref={mainImg} data-index={productImages[0].id}  src={productImages[0].src} alt=""/>
+                <img className=".m-img" key={mainImg} ref={mainImg} data-index={productImages[0].id}  src={productImages[0].src} alt=""/>
                 <div className="main-click-rl">
                     <span ref={mainImgSlideBtnLeft} onClick={()=>{mainImgMoveLeft()}} className="slide-btn slide-btn-l"><img src="media/images/icons/chevron-left.svg" alt=""/></span>
                     <span ref={mainImgSlideBtnRight} onClick={()=>{mainImgMoveRight()}} className="slide-btn slide-btn-r"><img src="media/images/icons/chevron-right.svg" alt=""/></span>
@@ -120,7 +120,7 @@ const ProductImageSlider = (props) => {
                 <div className="imgs" ref={imgSliderContainer}>
                     {   
                         productImages.map((image , i)  =>{
-                            return <div className="img"><img data-index={image.id} onClick={()=>{changeMainImgSrc(image.src , i)}} src={image.src} alt=""/></div>
+                            return <div className="img"><img key={image.id} data-index={image.id} onClick={()=>{changeMainImgSrc(image.src , i)}} src={image.src} alt=""/></div>
                         })
                     }
                 </div>

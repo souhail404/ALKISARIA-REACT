@@ -1,4 +1,5 @@
 import React from 'react'
+import Rating from '../../global/Rating';
 
 const FeaturedProduct = (props) => {
     const products = props.products;
@@ -11,13 +12,9 @@ const FeaturedProduct = (props) => {
             <div className="name">
                 <a href="#" className="name-txt">{products[0].name}</a>
             </div>
-            <div className="rating">
-                <span className="satr"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-                <span className="satr"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-                <span className="satr"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-                <span className="satr"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-                <span className="satr"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-            </div>
+            
+            <Rating rate={products[0].rating}/>
+
             <div className="price">
                 <p className="real-price">{products[0].curprice} Dhs</p>
                 <p className="old-price">{products[0].oldprice} Dhs</p>   

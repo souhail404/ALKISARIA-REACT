@@ -1,9 +1,9 @@
 import React from 'react'
 import ProductName from '../product-data/ProductName';
-import ProductRating from '../product-data/ProductRating';
 import ProductStock from '../product-data/ProductStock';
 import ProductPrice from '../product-data/ProductPrice';
 import ProductCta from '../product-data/ProductCta';
+import Rating from '../../global/Rating';
 
 
 const ProductInfosSec = (props) => {
@@ -13,7 +13,7 @@ const ProductInfosSec = (props) => {
     <div className="info-part">
         <ProductStock stock={product.stock} />
         <ProductName name={product.name}/>
-        <ProductRating />
+        <Rating rate={product.rating} />
         <div className="pi--separator"></div>
         <ProductPrice curprice={product.curprice} oldprice={product.oldprice} />
         <ProductCta />

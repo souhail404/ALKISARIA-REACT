@@ -1,4 +1,5 @@
 import React from 'react'
+import Rating from '../../global/Rating'
 
 const ProductCard = () => {
   return (
@@ -9,13 +10,8 @@ const ProductCard = () => {
         <div className="product-info">
             <a href="product" className="product-name">XIAOMI Mi 20W Wireless Car Charger</a>
             
-            <div className="product-ratings rating">
-                <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                <span className="star"><img src="media/images/icons/star-full.svg" alt=""/></span>
-                <span className="star"><img src="media/images/icons/star-regular.svg" alt=""/></span>
-            </div>
+            <Rating rate={3.8} />
+            
             <div className="product-price">
                 <p className="real-price">239.00 Dhs</p>
                 <p className="old-price">299.00 Dhs</p>

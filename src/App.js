@@ -5,8 +5,8 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import Product from './pages/Product';
 
-import './App.css';
-import './product.css';
+import './assets/css/App.css';
+import './assets/css/product.css';
 
 function App() {
   return (

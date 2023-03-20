@@ -6,13 +6,9 @@ import Header from './Header'
 const Layout = () => {
   return (
     <div className='app' id='app'>
-      <div className='main app-main' >
         <Header/>
         <Outlet/> 
-      </div>
         <Footer/>
-      
-      
     </div>
   )
 }

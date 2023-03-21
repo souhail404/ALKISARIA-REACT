@@ -3,18 +3,8 @@
 *{
   box-sizing: border-box;
 }
-:root{
-  --black:#091B1A;
-  --black02:#091b1a33;
-  --black08:hsla(177, 47%, 7%, 0.9);
-  --warm-brown:#5D4A39;
-  --soft-brown:#A96F47;
-  --soft-brown02:#a96e4733;
-  --yellow:#FBCE02;
-  --somo:#F27B57;
-  --somob1:#e96c46;
-  --white:#fffbf9;
-}
+
+
 
 
 
@@ -36,7 +26,7 @@
   height: 100%;
   position: -webkit-sticky;
   position: sticky;
-  top: 116px;
+  top: 96px;
 }
 #product-data-page .container .content .row.product-infos{
   width: 58%;

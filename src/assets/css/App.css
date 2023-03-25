@@ -45,7 +45,7 @@ a{
 body{
     padding-top: 138px;
     background-color: var(--white);
-    min-width: 300px;
+    min-width: 340px;
     background-color: var(--lightblue-l90);
 }
 #app{
@@ -57,6 +57,8 @@ section{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
 
 
 /* ----------------------------------------------------------- */
@@ -82,9 +84,6 @@ header .h-row{
     width: 100%;
     display: flex;
 }
-/* header .h-row-third{
-    padding-block: 6px;
-} */
 header .h-row .container{
     width: 100%;
     max-width: 1200px;
@@ -245,97 +244,135 @@ header  .h-row-second .col-wrapper.account .btn:not(:last-child){
     margin-right: 8px;
 }
 
-/* third row  */
-header  .col-wrapper.navlinks .col-el a{
-    padding-inline: 4px;
-    font-weight: 300;
+
+
+
+
+
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* BANNERS SECTION STYLING */
+#banners-sec{
+    width: 100%;
+}
+#banners-sec .container{
+    width: 100%;
     display: flex;
     align-items: center;
-}
-header  .col-wrapper.navlinks .col-el a img{
-    width: 14px;
-    margin-left: 4px;
-}
-header  .col-wrapper.navlinks .col-el .shopbtn.show img{
-    transform: rotate(180deg);
-}
-
-
-
-
-
-
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-/* HERO SECTION STYLING */
-#hero{
+    justify-content: center;
+}    
+#banners-sec .container .banner-view{
     width: 100%;
-    height: 380px;
-}
-#hero .hero-s-wrapper{
-    width: 100%;
-    height: 100%;
+    max-width: 1200px;
+    height: auto;
     display: flex;
-    flex-wrap: nowrap;
-    overflow:hidden;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}   
+#banners-sec .container .banner-view::-webkit-scrollbar{
+    display: none;
 }
-.hero-s-wrapper .hero-banner{
+#banners-sec .container .banner-view .banner-wrapper{ 
     width: 100%;
+    max-width: 100%;
     min-width: 100%;
     height: 100%;
-    transition: transform 0.25s ease;
-    display: grid;
-    grid-template-columns: 1.4fr 1fr ;
-    grid-template-rows: 100%;
-    padding: 12px 5%;
+    display: none;
+
 }
 
-.hero-s-wrapper .hero-banner .row{
+#banners-sec .container .banner-view .banner-wrapper.active{ 
+    display: block;
+}
+#banners-sec .container .banner-view .banner-wrapper img{ 
     width: 100%;
     height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+#banners-sec .container .banner-view .banner-wrapper img.big-img{ 
+    display: block;
+}
+#banners-sec .container .banner-view .banner-wrapper img.small-img{ 
+    display: none;
+}
+#banners-sec .container .banner-view .labels{
     display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    color: var(--white);
+    align-items: center;
+    justify-content: space-between;
+    transform: translateX(+50%);
+    position: absolute;
+    right: 50%;
+    bottom: 24px;
 }
-.hero-banner .row .illustratuion-img{
-    max-height: 320px;
+#banners-sec .container .banner-view .labels .slide-label{
+    width: 40px;
+    height: 4px;
+    opacity: 0.75;
+    background-color: var(--midblue-l85);
+    cursor: pointer;
 }
-.hero-banner .row .main-txt{
-    text-transform: uppercase;
+#banners-sec .container .banner-view .labels .slide-label.active{
+    background-color: var(--midBlue-d25);
 }
-.hero-banner .row .main-txt h1{
-    font-size: 48px;
-    line-height: 58px;
-    text-shadow:-3px 3px var(--orange);
-    margin-bottom: 8px;
-    animation: signshadow 1.2s infinite ease;
-    letter-spacing: 3px;
+#banners-sec .container .banner-view .labels .slide-label:not(:last-child){
+    margin-right: 6px;
 }
-@keyframes signshadow {
-    0%{
-        text-shadow:-3px 3px transparent;
+#banners-sec .container .banner-view .banner-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+#banners-sec .container .banner-view .banner-right-btn{
+    right: 12px;
+}
+#banners-sec .container .banner-view .banner-left-btn{
+    left: 12px;
+}
+#banners-sec .container .banner-view .banner-btn .btn img{
+    width: 30px;
+    opacity: 0.75;
+}
+#banners-sec .container .banner-view .banner-btn .btn img:hover{
+    background-color: #00000026;
+}
+#banners-sec .container .banner-view .banner-btn .r-btn img{
+    transform: rotate(-90deg);
+}
+#banners-sec .container .banner-view .banner-btn .l-btn img{
+    transform: rotate(90deg);
+}
+
+@media (max-width:600px) {
+    #banners-sec .container .banner-view .banner-wrapper img.big-img{ 
+        display: none;
     }
-    16%{
-        text-shadow:-3px 3px #EF6A77;
+    #banners-sec .container .banner-view .banner-wrapper img.small-img{ 
+        display: block;
     }
-    85%{
-        text-shadow:-3px 3px #EF6A77;
+    #banners-sec .container .banner-view .labels .slide-label{
+        width: 30px;
+        height: 3px;
     }
-    100%{
-        text-shadow:-3px 3px transparent;
+    #banners-sec .container .banner-view .labels{
+        bottom: 16px;
+    }
+    #banners-sec .container .banner-view .banner-right-btn{
+        right: 8px;
+    }
+    #banners-sec .container .banner-view .banner-left-btn{
+        left: 8px;
+    }
+    #banners-sec .container .banner-view .banner-btn .btn img{
+        width: 24px;
     }
 }
-.hero-banner .row .main-txt h2{
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #EF6A77;
-}
-.hero-s-wrapper .hero-banner.hero-banner-2 .row h2{
-    color: #091B1A;
-}
+
 
 
 
@@ -565,6 +602,8 @@ header  .col-wrapper.navlinks .col-el .shopbtn.show img{
     border-radius: 6px;
     padding: 8px;
     background-color: var(--white);
+    /* sos */
+    background-color: var(--lightblue-d25);
 }
 .product-card .product-info{
     display: flex;
@@ -1159,22 +1198,8 @@ footer{
         gap: 16px;
         row-gap: 32px;
     }
-    #hero{
-        width: 100%;
-        height: 320px;
-    }
-    .hero-banner .row .illustratuion-img{
-        max-height: 250px;
-    }
-    .hero-s-wrapper .hero-banner{
-        grid-template-columns: 1.6fr 1fr ;
-        grid-template-rows: 100%;
-        padding: 16px 4%;
-    }
-    .hero-banner .row .main-txt h1{
-        font-size: 40px;
-        line-height: 46px;
-    }
+    
+
     #shopping-cart{
         width: 320px;
         max-height: 100vh;
@@ -1258,19 +1283,9 @@ footer{
         font-size: 24px;
         font-weight: 700;
     }
-    #hero{
-        height: 300px;
-    }
-    .hero-banner .row .illustratuion-img{
-        max-height: 210px;
-    }
-    .hero-banner .row .main-txt h1{
-        font-size: 36px;
-        line-height: 44px;
-    }
-    .hero-banner .row .main-txt h2{
-        font-size: 16px;
-    }
+    
+
+    /* footer */
     .row1 { grid-area: row1;}
     .row2 { grid-area: row2; }
     .row3 { grid-area: row3; }
@@ -1462,34 +1477,6 @@ footer{
 
 
 
-
-    #hero{
-        height: 600px;
-    }
-    .hero-s-wrapper .hero-banner{
-        grid-template-columns:1fr ;
-        grid-template-rows: 1fr 1.6fr;
-        padding: 16px 24px;
-        row-gap: 16px;
-    }
-    .hero-s-wrapper .hero-banner .row{
-        align-items:flex-start;
-    }
-    .hero-s-wrapper .hero-banner .row.img{
-        align-items:flex-end;
-        padding-right: 10%;
-    }
-    .hero-banner .row .illustratuion-img{
-        max-height: 320px;
-    }
-    .hero-banner .row .main-txt h1{
-        font-size: 48px;
-        line-height: 58px;
-        margin-bottom: 16px;
-    }
-    .hero-banner .row .main-txt h2{
-        font-size: 20px;
-    }
     .logo-wrapper img {
         height: 44px;
     }
@@ -1629,20 +1616,7 @@ footer{
         padding: 8px;
         padding-block: 16px;
     }
-    #hero{
-        height: 550px;
-    }
-    .hero-banner .row .illustratuion-img{
-        max-height: 300px;
-    }
-    .hero-banner .row .main-txt h1{
-        font-size: 36px;
-        line-height: 44px;
-        margin-bottom: 16px;
-    }
-    .hero-banner .row .main-txt h2{
-        font-size: 18px;
-    }
+    
     .logo-wrapper img {
         height: 34px;
     }
@@ -1664,20 +1638,7 @@ footer{
         padding: 8px;
         padding-block: 16px;
     }
-    #hero{
-        height: 520px;
-    }
-    .hero-banner .row .illustratuion-img{
-        max-height: 250px;
-    }
-    .hero-banner .row .main-txt h1{
-        font-size: 32px;
-        line-height: 38px;
-        margin-bottom: 16px;
-    }
-    .hero-banner .row .main-txt h2{
-        font-size: 18px;
-    }
+
     
     header  .h-row-second .col-wrapper.carts .col-el:not(:last-child){
         margin-right: 6px;

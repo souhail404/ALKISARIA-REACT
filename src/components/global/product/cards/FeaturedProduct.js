@@ -1,5 +1,5 @@
 import React from 'react'
-import Rating from '../../global/Rating';
+import Rating from '../../Rating';
 
 const FeaturedProduct = (props) => {
     const products = props.products;
@@ -10,7 +10,7 @@ const FeaturedProduct = (props) => {
         </div>
         <div className="infos">
             <div className="name">
-                <a href="#" className="name-txt">{products[0].name}</a>
+                <a href="/" className="name-txt">{products[0].name}</a>
             </div>
             
             <Rating rate={products[0].rating}/>

@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import ProductImageSlider from '../components/product/product-data/ProductImageSlider';
-import ProductInfos from '../components/product/product-page-sections/ProductInfosSec';
-import ProductDescription from '../components/product/product-page-sections/ProductDescriptionSec';
-import ProductTestimonialsSec from '../components/product/product-page-sections/ProductTestimonialsSec';
+import React from 'react'
+import ProductImageSlider from '../components/sections/ProductImageSlider';
+import ProductInfos from '../components/sections/ProductInfos';
+import ProductDescription from '../components/sections/ProductDescription';
+import ProductTestimonials from '../components/sections/ProductTestimonials';
 
-import productsData from 'C:/Users/LENOVO/Desktop/AL KISARIA/React-Website-v/alkisaria/src/data/products.json'
+import data from 'C:/Users/LENOVO/Desktop/AL KISARIA/React-Website-v/alkisaria/src/data/data.json'
 
 const Product = () => {
-
+    const productsData = data.products;
     
 
 
@@ -28,7 +28,7 @@ const Product = () => {
             </div>
         </section>
 
-        <ProductTestimonialsSec testimonials={productsData[0].testimonials} />
+        <ProductTestimonials testimonials={productsData[0].testimonials} />
     </>
   )
 }

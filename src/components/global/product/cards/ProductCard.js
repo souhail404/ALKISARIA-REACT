@@ -1,19 +1,24 @@
 import React from 'react'
-import Rating from '../../global/Rating'
+import Rating from '../../Rating'
 
-const ProductCard = () => {
+const ProductCard = (props) => {
+    const name = props.name;
+    const price = props.price;
+    const rating = props.rating;
+    const imageSrc = props.imageSrc;
+
   return (
     <div className="product-card">
         <a href="product" className="product-image">
-            <img src="media/images/products/5.jpg" alt="Product Image"/>
+            <img src={imageSrc} alt="Product"/>
         </a>
         <div className="product-info">
-            <a href="product" className="product-name">XIAOMI Mi 20W Wireless Car Charger</a>
+            <a href="product" className="product-name ">{name}</a>
             
-            <Rating rate={3.8} />
+            <Rating rate={rating} />
             
             <div className="product-price">
-                <p className="real-price">239.00 Dhs</p>
+                <p className="real-price">{price} Dhs</p>
                 <p className="old-price">299.00 Dhs</p>
             </div>
             <div className="cta">

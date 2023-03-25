@@ -1,8 +1,8 @@
 import React from 'react'
-import TestimonialCard from '../product-data/testimonials/TestimonialCard';
+import TestimonialCard from '../global/TestimonialCard';
 
 
-const ProductTestimonialsSec = (props) => {
+const ProductTestimonials = (props) => {
   const testimonials = props.testimonials
   return (
     <section className="product-testimonials p-5" id="product-testimonials">
@@ -26,4 +26,4 @@ const ProductTestimonialsSec = (props) => {
   )
 }
 
-export default ProductTestimonialsSec
+export default ProductTestimonials

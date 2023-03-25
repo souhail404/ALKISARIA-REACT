@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
-import productsData from 'C:/Users/LENOVO/Desktop/AL KISARIA/React-Website-v/alkisaria/src/data/products.json'
+import React, { useEffect, useRef } from 'react'
 
 const ProductImageSlider = (props) => {
     //props 
@@ -92,15 +91,16 @@ const ProductImageSlider = (props) => {
 
     useEffect(()=>{
         hideBtnL();
+        const imgSliderWrapper = imgSliderContainer.current;
         window.addEventListener('resize' , squaredImg);
-        imgSliderContainer.current.addEventListener('scroll' ,()=>{
+        imgSliderWrapper.addEventListener('scroll' ,()=>{
             hideBtnL();
             hideBtnR();
         }); 
         mainImgContainer.current.style.height = `${mainImgContainer.current.clientWidth}px`;
         return ()=>{
             window.removeEventListener('resize' , squaredImg);
-            imgSliderContainer.current.removeEventListener('scroll' ,()=>{
+            imgSliderWrapper.removeEventListener('scroll' ,()=>{
                 hideBtnL();
                 hideBtnR();
             });

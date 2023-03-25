@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <div className="sub-row">
               <div>
-                <p className="copy-right"> <span>©</span>  2022-2023 <a href="">ALKISARIA</a> All Rights Reserved</p>
+                <p className="copy-right"> <span>©</span>  2022-2023 <a href="/">ALKISARIA</a> All Rights Reserved</p>
               </div>
             </div>
           </div>
@@ -35,9 +35,9 @@ const Footer = () => {
                 <h2>About</h2>
               </div>
               <div className="row-content">
-                <a href="">Services</a>
-                <a href="">Partnerships</a>
-                <a href="">Privacy & policy</a>
+                <a href="/">Services</a>
+                <a href="/">Partnerships</a>
+                <a href="/">Privacy & policy</a>
               </div>  
           </div>
           <div className="row row3">
@@ -45,9 +45,9 @@ const Footer = () => {
                 <h2>Support</h2>
               </div>
               <div className="row-content">
-                <a href="">Terms & Conditions</a>
-                <a href="">Help</a>
-                <a href="">Support</a>
+                <a href="/">Terms & Conditions</a>
+                <a href="/">Help</a>
+                <a href="/">Support</a>
               </div>
           </div>
         </div>

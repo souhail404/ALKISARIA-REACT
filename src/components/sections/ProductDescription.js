@@ -1,7 +1,7 @@
 import React from 'react'
-import ProductDescriptionContent from '../product-data/ProductDescriptionContent';
+import ProductDescriptionContent from '../global/product/ProductDescriptionContent'
 
-const ProductDescriptionSec = (props) => {
+const ProductDescription = (props) => {
   const description = props.description;
   return (
     <div className="description-part">
@@ -15,4 +15,4 @@ const ProductDescriptionSec = (props) => {
   )
 }
 
-export default ProductDescriptionSec
+export default ProductDescription

@@ -1,8 +1,10 @@
 import React from 'react'
-import ProductDeals from '../product-cards/ProductDeals';
-import productsData from 'C:/Users/LENOVO/Desktop/AL KISARIA/React-Website-v/alkisaria/src/data/products.json'
+import ProductDeals from './cards/ProductDeals';
 
-const DealProductsSec = () => {
+import data from '../../../data/data.json'
+
+const Deals = () => {
+  const productsData = data.products;
   return (
     <div className="deal-products">
         <div className="wrapper-title">
@@ -15,4 +17,4 @@ const DealProductsSec = () => {
   )
 }
 
-export default DealProductsSec
+export default Deals

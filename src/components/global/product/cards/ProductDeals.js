@@ -1,6 +1,6 @@
 import React from 'react'
-import Rating from '../../global/Rating'
-import Timer from '../../global/Timer'
+import Rating from '../../Rating'
+import Timer from '../../Timer'
 
 const ProductDeals = (props) => {
     const products = props.products
@@ -21,7 +21,7 @@ const ProductDeals = (props) => {
             
             <div className="products-data">
                 <div className="name">
-                    <a href="" className="name-txt">{products[0].name}</a>
+                    <a href="/" className="name-txt ">{products[0].name}</a>
                 </div>
                 
                 <Rating rate={products[0].rating}/>
@@ -31,7 +31,7 @@ const ProductDeals = (props) => {
                     <p className="old-price">{products[0].oldprice} Dhs</p>
                 </div>
                 <div className="cta">
-                    <a href="" className="buy-btn">Buy Now</a>
+                    <a href="/" className="buy-btn">Buy Now</a>
                 </div>
             </div>
         </div>

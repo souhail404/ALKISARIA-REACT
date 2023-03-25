@@ -1,9 +1,10 @@
 import React from 'react'
-import FeaturedProduct from '../product-cards/FeaturedProduct'
+import FeaturedProduct from './cards/FeaturedProduct'
 
-import productsData from 'C:/Users/LENOVO/Desktop/AL KISARIA/React-Website-v/alkisaria/src/data/products.json'
+import data from '../../../data/data.json'
 
-const FeaturedProductsSec = () => {
+const FeaturedProducts = () => {
+  const productsData = data.products;
   return (
     <div className="featured-products">
         <div className="wrapper-title">
@@ -23,4 +24,4 @@ const FeaturedProductsSec = () => {
   )
 }
 
-export default FeaturedProductsSec
+export default FeaturedProducts

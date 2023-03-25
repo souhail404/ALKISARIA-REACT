@@ -1,12 +1,12 @@
 import React from 'react'
-import ProductName from '../product-data/ProductName';
-import ProductStock from '../product-data/ProductStock';
-import ProductPrice from '../product-data/ProductPrice';
-import ProductCta from '../product-data/ProductCta';
-import Rating from '../../global/Rating';
+import ProductName from '../global/product/ProductName';
+import ProductStock from '../global/product/ProductStock';
+import ProductPrice from '../global/product/ProductPrice';
+import ProductCta from '../global/product/ProductCta';
+import Rating from '../global/Rating';
 
 
-const ProductInfosSec = (props) => {
+const ProductInfos = (props) => {
     const product = props.product;
 
     return (
@@ -21,4 +21,4 @@ const ProductInfosSec = (props) => {
   )
 }
 
-export default ProductInfosSec
+export default ProductInfos
